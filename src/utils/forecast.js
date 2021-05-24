@@ -13,7 +13,7 @@ const forecast = (latitude, longitude , callback) => {
             callback('Unable to find current location. Try another coordinates!', undefined)
         } else {
             const {weather_descriptions, temperature, precip, humidity} = body.current
-            callback(undefined, `${weather_descriptions[0]}. It is currently ${temperature} degrees out. There is a ${precip}% chance of rain. And the humidity is ${humidity}`)
+            callback(undefined, `${weather_descriptions[0]}. It is currently ${temperature} degrees out. There is a ${precip}% chance of rain. And the humidity is ${humidity}%`)
         }
     })
 }
